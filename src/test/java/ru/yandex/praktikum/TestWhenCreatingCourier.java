@@ -65,7 +65,7 @@ public class TestWhenCreatingCourier {
 
         assertThat("Первый курьер не создан", statusCodeFirstCourier, equalTo(SC_CREATED));
         assertThat("Повторно создался существующий курьер", statusCodeSecondCourier, equalTo(SC_CONFLICT));
-        assertThat("Ошибка в тексте", message, equalTo("Этот логин уже используется"));
+        assertThat("Ошибка в тексте", message, equalTo("Этот логин уже используется. Попробуйте другой."));
     }
 
     @Test
